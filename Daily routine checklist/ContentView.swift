@@ -20,6 +20,8 @@ enum CategoryColor: String, Codable, CaseIterable, Identifiable {
     }
 }
 
+
+
 enum Weekday: Int, CaseIterable, Codable, Identifiable {
     case sunday = 1, monday, tuesday, wednesday, thursday, friday, saturday
     var id: Int { self.rawValue }
