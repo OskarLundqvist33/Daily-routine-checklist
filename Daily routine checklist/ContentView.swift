@@ -242,7 +242,6 @@ struct ContentView: View {
         guard let oldMasterIndex = workingItems.firstIndex(where: { $0.id == movedItem.id }) else { return }
         let itemToMove = workingItems.remove(at: oldMasterIndex)
         
-        // Re-insertion logic remains the same to maintain your specific sorting requirement
         if let newDailyIndex = itemsOnDay.firstIndex(where: { $0.id == movedItem.id }) {
             if newDailyIndex + 1 < itemsOnDay.count {
                 let nextItem = itemsOnDay[newDailyIndex + 1]
